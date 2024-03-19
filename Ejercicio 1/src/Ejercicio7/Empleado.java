@@ -2,7 +2,7 @@ package Ejercicio7;
 
 public class Empleado {
     private String Nombre;
-    private int Salario;
+    private double Salario;
     private String Departamento;
 
 
@@ -14,7 +14,7 @@ public class Empleado {
         Nombre = nombre;
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return Salario;
     }
 
@@ -29,12 +29,13 @@ public class Empleado {
     public void setDepartamento(String departamento) {
         Departamento = departamento;
     }
-    Empleado empleado=new Empleado();
+    public Empleado(String Nombre, double Salario, String departamento) {
+        this.Nombre=Nombre;
+        this.Salario=Salario;
+        this.Departamento=departamento;
+    }
 
 
-
-    public int CalcularSueldos() {
-        return Salario;
     }
     // Preguntar
-}
+

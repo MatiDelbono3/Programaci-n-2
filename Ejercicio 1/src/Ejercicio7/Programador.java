@@ -3,7 +3,12 @@ package Ejercicio7;
 public class Programador extends Empleado{
     private int NumeroProyectos;
 
-    public Programador(String Nombre, int Salario, String departamento) {
+    public Programador(String Nombre, double Salario, String departamento, int NumeroProyectos) {
+        // Super devuelve las propiedades comunes
+        super(Nombre, Salario, departamento);
+        // this se usa en el constructor para las propiedades únicas de la subclase.
+        this.NumeroProyectos=NumeroProyectos;
+        // Preguntar si se debe crear una clase Empresa con un arreglo de empleados.
 
     }
 }
