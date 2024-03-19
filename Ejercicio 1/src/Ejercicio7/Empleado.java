@@ -30,10 +30,11 @@ public class Empleado {
         Departamento = departamento;
     }
     Empleado empleado=new Empleado();
-    Director director=new Director();
-    Programador programador=new Programador(Nombre, Salario, Departamento);
+
+
 
     public int CalcularSueldos() {
         return Salario;
     }
+    // Preguntar
 }

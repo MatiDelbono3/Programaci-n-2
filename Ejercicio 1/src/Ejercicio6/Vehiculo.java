@@ -28,4 +28,5 @@ public class Vehiculo {
     public void setNumeroRuedas(int numeroRuedas) {
         NumeroRuedas = numeroRuedas;
     }
+    // Preguntar
 }
