@@ -14,12 +14,7 @@ public class  Animal {
     Perro perro=new Perro();
     Gato gato=new Gato();
     public  <T> String Comunicar() {
-       if (animal.getClass().getSimpleName().equals("Perro"))
-           return "Ladra";
-       else if (animal.getClass().getSimpleName().equals("Gato"))
-           return "maulla";
-
-        return null;
+      return "Soy un animal";
         
     }
 
