@@ -8,7 +8,7 @@ public class Programador extends Empleado{
         super(Nombre, Salario, departamento);
         // this se usa en el constructor para las propiedades únicas de la subclase.
         this.NumeroProyectos=NumeroProyectos;
-        // Preguntar si se debe crear una clase Empresa con un arreglo de empleados.
+
 
     }
 }

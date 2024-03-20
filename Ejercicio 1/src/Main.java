@@ -3,6 +3,12 @@ import Ejercicio4.Rectangulo;
 import Ejercicio5.Animal;
 import Ejercicio5.Gato;
 import Ejercicio5.Perro;
+import Ejercicio6.Camion;
+import Ejercicio6.Coche;
+import Ejercicio6.Moto;
+import Ejercicio7.Empleado;
+import Ejercicio7.Programador;
+import Ejercicio7.Director;
 import Persona.Estudiante;
 import Ejercicio3.Punto;
 
@@ -35,5 +41,18 @@ public class Main {
         Gato gato=new Gato();
         Perro perro=new Perro();
 
+        // Ejercicio 6
+        Coche coche=new Coche("Volkswagen", "Suran", 4, 5, "Comfortline");
+        Moto moto=new Moto("Honda", "SH125", 2, 125);
+        Camion camion=new Camion("Iveco", "Stralis", 8,"Electrodomésticos", 543215);
+
+        // Ejercicio 7
+        Empleado[] empleados=new Empleado[3];
+        // Todo objeto creado en otra clase, se debe crear también en el main
+        Empleado empleado=new Empleado("Hernán Poi", 950000, "Producción");
+        Director director=new Director("Maxi Lovera", 1000000,"Sistemas", 25, 100000);
+        Programador programador=new Programador("Martín Valvo", 800000, "Sitios Web", 8);
+        double SalarioDeLaEmpresa=empleado.CalcularSalario(empleados);
+        System.out.println("El sueldo total de los empleados es " + empleado.CalcularSalario(empleados));
         }
     }

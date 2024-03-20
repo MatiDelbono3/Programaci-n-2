@@ -34,8 +34,15 @@ public class Empleado {
         this.Salario=Salario;
         this.Departamento=departamento;
     }
+    Empleado[] empleados=new Empleado[]{new Empleado("Matías Delbono", 350000, "Sistemas"), new Empleado("Agustín Duelli", 500000, "Facturación")};
+    public double CalcularSalario(Empleado[] empleados){
+        double SalarioTotal=0;
+        for (Empleado empleado: empleados){
+            SalarioTotal+= empleado.getSalario();
 
+        }
+        return SalarioTotal;
+}
+}
 
-    }
-    // Preguntar
 

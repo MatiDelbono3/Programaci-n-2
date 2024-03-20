@@ -28,5 +28,10 @@ public class Vehiculo {
     public void setNumeroRuedas(int numeroRuedas) {
         NumeroRuedas = numeroRuedas;
     }
-    // Preguntar
+    public Vehiculo(String Marca, String Modelo, int NumeroRuedas) {
+        this.Marca=Marca;
+        this.Modelo=Modelo;
+        this.NumeroRuedas=NumeroRuedas;
+    }
+    //
 }

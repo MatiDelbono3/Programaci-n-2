@@ -1,6 +1,6 @@
 package Ejercicio7;
 
- class Director extends Empleado {
+ public class Director extends Empleado {
     private int PersonasACargo;
     private int Bono;
     public Director(String Nombre, double Salario, String Departamento, int PersonasACargo, int Bono){
