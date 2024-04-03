@@ -2,6 +2,7 @@ package Prototype;
 import java.util.Objects;
 public  class Circulo implements Cloneable {
 
+    // propiedades privadas
     private double radio;
     private Punto Centro;
 
@@ -27,7 +28,7 @@ public  class Circulo implements Cloneable {
         Centro = centro;
     }
 
-
+// Sobreescritura del método de clonado definido en la interfaz
     @Override
     public Object clonar() {
         return new Circulo(this.radio,new Punto(this.Centro.getX(), this.Centro.getY()));
